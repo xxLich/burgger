@@ -1,0 +1,161 @@
+body{
+   background: rgb(0, 0, 0);
+    
+}
+
+nav{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    
+
+}
+
+#navbarNav ul li a{
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+
+}
+
+#navbarNav ul li a:hover{
+    color: orange;
+ }
+
+img{
+    width: 100%;
+}
+
+.title-2{
+    display: flex;
+    justify-content: center;
+    font-family: Bahnschrift ;
+    font-size: 30px;
+    color: white;
+    padding: 40px;  
+}
+.btn{
+    color: white;
+    font-family: Bahnschrift ;
+    background-color: #88746C;
+}
+.burgers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+   
+
+}
+.card-text{
+    color: white;
+    font-size: 18px;
+    font-family: Bahnschrift ;
+}
+.card{
+    background-color: rgb(51,51,51);
+    margin: 0 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(255, 254, 254, 0.2);
+    transition: all 400ms ease;
+    margin: 15px;
+
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(238, 157, 5, 0.3);
+    transform: translateY(-3%);
+}
+
+
+
+.carrito{
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos{
+    display: flex;
+}
+
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+    position: relative;
+    left: 10px;
+    
+  }
+ input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:991px) {
+    .burgers{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        align-content: center;
+       
+    
+    }
+
+    .card{
+        margin: 15px;
+    }
+}
+
+@media  screen and (max-width:850px) {
+    .burgers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+       
+    
+    }
+
+    .card{
+        margin: 15px;
+    }
+}
+
+@media  screen and (max-width:750px) {
+    .burgers{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 10px;
+       
+    
+    }
+
+    .card{
+        margin: 15px;
+    }
+}
